@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Dokter - Kampung KB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="1000690934.jpg" alt="Logo Universitas" class="h-16 md:h-20 w-auto mr-4 object-contain">
+                <div class="border-l-2 border-gray-300 pl-4">
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight">Kampung KB</h1>
+                    <p class="text-xs md:text-sm text-gray-500">Kesehatan Gigi & Mulut</p>
+                </div>
+            </div>
+            <!-- Menu Multi-Page -->
+            <nav class="flex space-x-6 overflow-x-auto">
+                <a href="index.html" class="text-gray-500 hover:text-blue-900 font-medium whitespace-nowrap pb-1 transition">Artikel Utama</a>
+                <a href="galeri.html" class="text-gray-500 hover:text-blue-900 font-medium whitespace-nowrap pb-1 transition">Galeri Media</a>
+                <a href="profil.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 whitespace-nowrap pb-1">Profil Dokter</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Profil -->
+    <main class="container mx-auto px-4 md:px-8 py-10 flex-grow">
+        <nav class="text-sm text-gray-500 mb-8">
+            <ol class="list-none p-0 inline-flex">
+                <li class="flex items-center">
+                    <a href="index.html" class="hover:text-blue-700">Beranda</a>
+                    <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+                </li>
+                <li class="flex items-center">
+                    <span class="text-gray-800 font-semibold">Profil Dokter</span>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12 max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div class="flex-shrink-0">
+                <img src="1000690935_2.jpg" alt="Foto Antoni Dwi Saputra" class="w-48 h-48 md:w-64 md:h-64 object-cover object-top rounded-2xl shadow-lg border-4 border-blue-50">
+            </div>
+            <div class="text-center md:text-left w-full">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Profil Edukator</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-2">Antoni Dwi Saputra, S.Tr.Kes</h2>
+                <p class="text-lg text-blue-900 font-medium mb-6">Praktisi Kesehatan Gigi dan Mulut</p>
+                
+                <div class="space-y-4 text-gray-700 leading-relaxed text-left">
+                    <p>
+                        Berdedikasi dalam memberikan edukasi serta intervensi kesehatan langsung kepada masyarakat. Fokus utama beliau adalah meningkatkan kesadaran akan pentingnya menjaga kesehatan gigi dan mulut sejak dini untuk mencegah penyakit yang lebih serius.
+                    </p>
+                    <p>
+                        Melalui program intervensi di Kampung KB, beliau aktif memberikan penyuluhan mengenai cara menyikat gigi yang benar, pencegahan karies, hingga pentingnya pemeriksaan rutin setiap 6 bulan sekali.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-6 mt-auto text-sm">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Edukasi Kesehatan Gigi. Dikembangkan untuk Intervensi Kampung KB.</p>
+        </div>
+    </footer>
+</body>
+</html>
