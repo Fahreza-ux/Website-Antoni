@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeri Media - Kampung KB</title>
+    <title>Galeri Media & Video - Kampung KB</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
@@ -33,6 +33,7 @@
 
     <!-- Konten Galeri -->
     <main class="container mx-auto px-4 md:px-8 py-10 flex-grow">
+        <!-- Breadcrumb -->
         <nav class="text-sm text-gray-500 mb-8">
             <ol class="list-none p-0 inline-flex">
                 <li class="flex items-center">
@@ -40,35 +41,121 @@
                     <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
                 </li>
                 <li class="flex items-center">
-                    <span class="text-gray-800 font-semibold">Galeri Media Edukasi</span>
+                    <span class="text-gray-800 font-semibold">Galeri Media & Video Edukasi</span>
                 </li>
             </ol>
         </nav>
 
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-10">
-                <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Galeri</span>
-                <h2 class="text-3xl font-bold text-gray-900 mt-4">Poster Intervensi Kesehatan Gigi</h2>
-                <p class="text-gray-500 mt-2">Materi visual edukasi yang digunakan dalam penyuluhan.</p>
-            </div>
+        <div class="max-w-6xl mx-auto space-y-16">
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                    <img src="1000690940.jpg" alt="Pencegahan Karies/Lubang Gigi" class="w-full h-auto object-cover">
+            <!-- BAGIAN 1: POSTER EDUKASI -->
+            <section>
+                <div class="text-center mb-10">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Poster Info</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-4">Poster Intervensi Kesehatan Gigi</h2>
+                    <p class="text-gray-500 mt-2">Materi visual edukasi yang digunakan dalam penyuluhan.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                    <img src="1000690941.jpg" alt="Pencegahan Karang Gigi & Gusi Tetap Sehat" class="w-full h-auto object-cover">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card Poster 1 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="1000690940.jpg" alt="Pencegahan Karies/Lubang Gigi" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-800 text-base">Pencegahan Karies / Lubang Gigi</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Poster 2 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="1000690941.jpg" alt="Pencegahan Karang Gigi & Gusi Tetap Sehat" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-800 text-base">Pencegahan Karang Gigi & Gusi Sehat</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Poster 3 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="1000690942.jpg" alt="Cara Menyikat Gigi Yang Baik dan Benar" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-800 text-base">Cara Menyikat Gigi Yang Baik</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Poster 4 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="1000690943.jpg" alt="Pencegahan Bau Mulut & Jaga Gigi" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-800 text-base">Pencegahan Bau Mulut</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card Poster 5 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200">
+                            <img src="1000690944.jpg" alt="Edukasi Pertumbuhan Gigi Susu Pada Anak-Anak" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="font-bold text-gray-800 text-base">Edukasi Gigi Susu Anak</h3>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                    <img src="1000690942.jpg" alt="Cara Menyikat Gigi Yang Baik dan Benar" class="w-full h-auto object-cover">
+            </section>
+
+            <hr class="border-gray-200 my-10">
+
+            <!-- BAGIAN 2: BARIS VIDEO EDUKASI -->
+            <section>
+                <div class="text-center mb-10">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Video Interaktif</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-4">Video Edukasi & Penyuluhan</h2>
+                    <p class="text-gray-500 mt-2">Tonton tayangan penyuluhan langsung dan tutorial perawatan gigi.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                    <img src="1000690943.jpg" alt="Pencegahan Bau Mulut & Jaga Gigi" class="w-full h-auto object-cover">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Card Video 1 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200 bg-black aspect-video">
+                            <!-- Ganti video1.mp4 dengan file mp4 yang diupload ke github -->
+                            <video controls class="w-full h-full object-cover">
+                                <source src="video1.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-gray-800 text-lg mb-1">Tutorial Cara Menyikat Gigi yang Benar</h3>
+                            <p class="text-sm text-gray-500">Peragaan teknik menyikat gigi 45 derajat dan penggunaan pasta gigi berfluoride.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Video 2 dengan Bingkai -->
+                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="rounded-xl overflow-hidden border border-gray-200 bg-black aspect-video">
+                            <!-- Ganti video2.mp4 dengan file mp4 yang diupload ke github -->
+                            <video controls class="w-full h-full object-cover">
+                                <source src="video2.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung pemutaran video.
+                            </video>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-gray-800 text-lg mb-1">Dokumentasi Intervensi Kampung KB</h3>
+                            <p class="text-sm text-gray-500">Kegiatan penyuluhan dan pemeriksaan kesehatan gigi gratis di masyarakat.</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-                    <img src="1000690944.jpg" alt="Edukasi Pertumbuhan Gigi Susu Pada Anak-Anak" class="w-full h-auto object-cover">
-                </div>
-            </div>
+            </section>
+
         </div>
     </main>
 
