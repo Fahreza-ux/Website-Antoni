@@ -14,32 +14,27 @@
             background-size: 320px;
             background-attachment: fixed;
         }
-        /* Menyembunyikan scrollbar bawaan agar menu terlihat rapi */
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="text-gray-800 flex flex-col min-h-screen relative">
 
-    <!-- Latar Belakang Transparan -->
     <div class="fixed inset-0 bg-slate-100/90 backdrop-blur-[1px] -z-10 pointer-events-none"></div>
 
-    <!-- Header & Navigasi -->
+    <!-- Header Adaptif untuk Mode HP & Desktop -->
     <header class="bg-white/95 backdrop-blur-md shadow-md py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between">
-            <div class="flex items-center mb-4 md:mb-0">
-                <img src="1000690934.jpg" alt="Logo Universitas" class="h-14 md:h-20 w-auto mr-3 object-contain">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex items-center">
+                <img src="1000690934.jpg" alt="Logo Universitas" class="h-12 sm:h-16 md:h-20 w-auto mr-3 object-contain shrink-0">
                 <div class="border-l-2 border-gray-300 pl-3">
-                    <h1 class="text-lg md:text-2xl font-bold text-blue-900 leading-tight">Edukasi & Penyuluhan</h1>
-                    <p class="text-[10px] md:text-sm text-gray-500">Kesehatan Gigi dan Mulut</p>
+                    <h1 class="text-base sm:text-lg md:text-2xl font-bold text-blue-900 leading-tight">Edukasi & Penyuluhan</h1>
+                    <p class="text-[10px] sm:text-xs md:text-sm text-gray-500">Kesehatan Gigi dan Mulut</p>
                 </div>
             </div>
             
-            <!-- Menu Navigasi yang Bisa Digeser di HP -->
-            <nav class="flex space-x-4 md:space-x-6 overflow-x-auto pb-2 -mb-2 text-sm md:text-base scroll-smooth scrollbar-hide">
-                <a href="index.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 whitespace-nowrap pb-1">Artikel Utama</a>
-                <a href="galeri.html" class="text-gray-500 hover:text-blue-900 font-medium whitespace-nowrap pb-1 transition">Galeri Media</a>
-                <a href="profil.html" class="text-gray-500 hover:text-blue-900 font-medium whitespace-nowrap pb-1 transition">Profil Tenaga Kesehatan</a>
+            <nav class="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm md:text-base">
+                <a href="index.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 pb-1">Artikel Utama</a>
+                <a href="galeri.html" class="text-gray-500 hover:text-blue-900 font-medium pb-1 transition">Galeri Media</a>
+                <a href="profil.html" class="text-gray-500 hover:text-blue-900 font-medium pb-1 transition">Profil Tenaga Kesehatan</a>
             </nav>
         </div>
     </header>
