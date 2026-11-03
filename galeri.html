@@ -21,19 +21,19 @@
     <div class="fixed inset-0 bg-slate-100/90 backdrop-blur-[1px] -z-10 pointer-events-none"></div>
 
     <header class="bg-white/95 backdrop-blur-md shadow-md py-4 sticky top-0 z-50">
-        <div class="container mx-auto px-4 md:px-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div class="flex items-center">
-                <img src="1000690934.jpg" alt="Logo Universitas" class="h-12 sm:h-16 md:h-20 w-auto mr-3 object-contain shrink-0">
+        <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center justify-center md:justify-start w-full md:w-auto">
+                <img src="1000690934.jpg" alt="Logo Universitas" class="h-12 md:h-16 w-auto mr-3 object-contain shrink-0">
                 <div class="border-l-2 border-gray-300 pl-3">
-                    <h1 class="text-base sm:text-lg md:text-2xl font-bold text-blue-900 leading-tight">Edukasi & Penyuluhan</h1>
-                    <p class="text-[10px] sm:text-xs md:text-sm text-gray-500">Kesehatan Gigi dan Mulut</p>
+                    <h1 class="text-base md:text-xl font-bold text-blue-900 leading-tight">Edukasi & Penyuluhan</h1>
+                    <p class="text-xs text-gray-500">Kesehatan Gigi dan Mulut</p>
                 </div>
             </div>
             
-            <nav class="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm md:text-base">
-                <a href="index.html" class="text-gray-500 hover:text-blue-900 font-medium pb-1 transition">Artikel Utama</a>
-                <a href="galeri.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 pb-1">Galeri Media</a>
-                <a href="profil.html" class="text-gray-500 hover:text-blue-900 font-medium pb-1 transition">Profil Tenaga Kesehatan</a>
+            <nav class="flex items-center justify-center space-x-3 sm:space-x-6 text-xs sm:text-sm md:text-base border-t md:border-t-0 border-gray-100 pt-3 md:pt-0 w-full md:w-auto">
+                <a href="index.html" class="text-gray-500 hover:text-blue-900 font-medium pb-1 transition whitespace-nowrap">Artikel Utama</a>
+                <a href="galeri.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 pb-1 whitespace-nowrap">Galeri Media</a>
+                <a href="profil.html" class="text-gray-500 hover:text-blue-900 font-medium pb-1 transition whitespace-nowrap">Profil Tenaga Kesehatan</a>
             </nav>
         </div>
     </header>
@@ -59,47 +59,59 @@
                     <p class="text-gray-500 mt-2">Materi visual edukasi yang digunakan dalam penyuluhan masyarakat.</p>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                <!-- Grid Poster Disesuaikan Agar Pas & Gambar/Judul Cocok -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    
+                    <!-- Poster 1: Karies -->
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690940.jpg" alt="Pencegahan Karies/Lubang Gigi" class="w-full h-auto object-cover">
                         </div>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center mt-auto">
                             <h3 class="font-bold text-gray-800 text-base">Pencegahan Karies / Lubang Gigi</h3>
                         </div>
                     </div>
-                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+
+                    <!-- Poster 2: Karang Gigi -->
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690941.jpg" alt="Pencegahan Karang Gigi & Gusi Tetap Sehat" class="w-full h-auto object-cover">
                         </div>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center mt-auto">
                             <h3 class="font-bold text-gray-800 text-base">Pencegahan Karang Gigi & Gusi Sehat</h3>
                         </div>
                     </div>
-                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+
+                    <!-- Poster 3: Cara Menyikat Gigi -->
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690942.jpg" alt="Cara Menyikat Gigi Yang Baik dan Benar" class="w-full h-auto object-cover">
                         </div>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center mt-auto">
                             <h3 class="font-bold text-gray-800 text-base">Cara Menyikat Gigi Yang Baik</h3>
                         </div>
                     </div>
-                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+
+                    <!-- Poster 4: Bau Mulut -->
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690943.jpg" alt="Pencegahan Bau Mulut & Jaga Gigi" class="w-full h-auto object-cover">
                         </div>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center mt-auto">
                             <h3 class="font-bold text-gray-800 text-base">Pencegahan Bau Mulut</h3>
                         </div>
                     </div>
-                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+
+                    <!-- Poster 5: Gigi Susu Anak -->
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690944.jpg" alt="Edukasi Pertumbuhan Gigi Susu Pada Anak-Anak" class="w-full h-auto object-cover">
                         </div>
-                        <div class="p-4 text-center">
+                        <div class="p-4 text-center mt-auto">
                             <h3 class="font-bold text-gray-800 text-base">Edukasi Gigi Susu Anak</h3>
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -133,4 +145,5 @@
         </div>
     </footer>
 </body>
-</html>
+        </html>
+        
