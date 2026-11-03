@@ -7,13 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Inter', sans-serif;
+            background-image: url('1000691502.jpg');
+            background-repeat: repeat;
+            background-size: 320px;
+            background-attachment: fixed;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-800 flex flex-col min-h-screen">
+<body class="text-gray-800 flex flex-col min-h-screen relative">
 
-    <!-- Header & Navigasi -->
-    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+    <div class="fixed inset-0 bg-slate-100/90 backdrop-blur-[1px] -z-10 pointer-events-none"></div>
+
+    <header class="bg-white/95 backdrop-blur-md shadow-md py-4 sticky top-0 z-50">
         <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between">
             <div class="flex items-center mb-4 md:mb-0">
                 <img src="1000690934.jpg" alt="Logo Universitas" class="h-16 md:h-20 w-auto mr-4 object-contain">
@@ -22,7 +29,6 @@
                     <p class="text-xs md:text-sm text-gray-500">Kesehatan Gigi & Mulut</p>
                 </div>
             </div>
-            <!-- Menu Multi-Page -->
             <nav class="flex space-x-6 overflow-x-auto">
                 <a href="index.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 whitespace-nowrap pb-1">Artikel Utama</a>
                 <a href="galeri.html" class="text-gray-500 hover:text-blue-900 font-medium whitespace-nowrap pb-1 transition">Galeri Media</a>
@@ -31,9 +37,8 @@
         </div>
     </header>
 
-    <!-- Konten Utama -->
     <main class="container mx-auto px-4 md:px-8 py-10 flex-grow">
-        <nav class="text-sm text-gray-500 mb-8">
+        <nav class="text-sm text-gray-600 mb-8 font-medium">
             <ol class="list-none p-0 inline-flex">
                 <li class="flex items-center">
                     <span class="text-gray-800 font-semibold">Beranda / Artikel Utama</span>
@@ -45,7 +50,7 @@
             <img src="1000690933.jpg" alt="Foto Fakultas Kedokteran Gigi" class="max-w-full h-auto rounded-xl shadow-lg border border-gray-200">
         </div>
 
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-12 max-w-5xl mx-auto">
+        <div class="bg-white/95 rounded-2xl shadow-md border border-gray-100 p-6 md:p-12 max-w-5xl mx-auto">
             <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Artikel Kesehatan</span>
             
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
@@ -70,17 +75,14 @@
                         <h4 class="font-bold text-blue-900 text-xl mb-2">1. Sikat Gigi Teratur</h4>
                         <p class="text-base">Sikatlah gigi minimal dua kali sehari, terutama setelah sarapan dan sebelum tidur menggunakan pasta gigi ber-fluoride.</p>
                     </div>
-                    
                     <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                         <h4 class="font-bold text-blue-900 text-xl mb-2">2. Kurangi Makanan Manis</h4>
                         <p class="text-base">Bakteri di mulut mengubah gula menjadi asam yang dapat merusak email gigi dan menyebabkan gigi berlubang.</p>
                     </div>
-                    
                     <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                         <h4 class="font-bold text-blue-900 text-xl mb-2">3. Gunakan Benang Gigi</h4>
                         <p class="text-base">Sikat gigi tidak selalu bisa menjangkau sela-sela gigi. Gunakan benang gigi sekali sehari untuk membersihkan sisa makanan.</p>
                     </div>
-                    
                     <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                         <h4 class="font-bold text-blue-900 text-xl mb-2">4. Rutin ke Dokter Gigi</h4>
                         <p class="text-base">Lakukan pemeriksaan dan pembersihan karang gigi rutin setiap 6 bulan sekali untuk mencegah masalah serius.</p>
@@ -90,7 +92,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-6 mt-auto text-sm">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2026 Edukasi Kesehatan Gigi. Dikembangkan untuk Intervensi Kampung KB.</p>
