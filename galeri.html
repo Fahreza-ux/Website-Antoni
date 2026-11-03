@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeri Media & Video - Kampung KB</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Inter', sans-serif;
+            background-image: url('1000691502.jpg');
+            background-repeat: repeat;
+            background-size: 320px;
+            background-attachment: fixed;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-800 flex flex-col min-h-screen">
+<body class="text-gray-800 flex flex-col min-h-screen relative">
 
-    <!-- Header & Navigasi -->
-    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+    <div class="fixed inset-0 bg-slate-100/90 backdrop-blur-[1px] -z-10 pointer-events-none"></div>
+
+    <header class="bg-white/95 backdrop-blur-md shadow-md py-4 sticky top-0 z-50">
         <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row md:items-center justify-between">
             <div class="flex items-center mb-4 md:mb-0">
-                <!-- Logo Fakultas -->
                 <img src="1000690934.jpg" alt="Logo Universitas" class="h-16 md:h-20 w-auto mr-4 object-contain">
                 <div class="border-l-2 border-gray-300 pl-4">
                     <h1 class="text-xl md:text-2xl font-bold text-blue-900 leading-tight">Kampung KB</h1>
                     <p class="text-xs md:text-sm text-gray-500">Kesehatan Gigi & Mulut</p>
                 </div>
             </div>
-            <!-- Menu Multi-Page -->
             <nav class="flex space-x-6 overflow-x-auto">
                 <a href="index.html" class="text-gray-500 hover:text-blue-900 font-medium whitespace-nowrap pb-1 transition">Artikel Utama</a>
                 <a href="galeri.html" class="text-blue-900 font-semibold border-b-2 border-blue-900 whitespace-nowrap pb-1">Galeri Media</a>
@@ -33,10 +37,8 @@
         </div>
     </header>
 
-    <!-- Konten Galeri & Video -->
     <main class="container mx-auto px-4 md:px-8 py-10 flex-grow">
-        <!-- Breadcrumb -->
-        <nav class="text-sm text-gray-500 mb-8">
+        <nav class="text-sm text-gray-600 mb-8 font-medium">
             <ol class="list-none p-0 inline-flex">
                 <li class="flex items-center">
                     <a href="index.html" class="hover:text-blue-700">Beranda</a>
@@ -49,8 +51,6 @@
         </nav>
 
         <div class="max-w-6xl mx-auto space-y-16">
-            
-            <!-- SEKSI 1: POSTER EDUKASI -->
             <section>
                 <div class="text-center mb-10">
                     <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Poster Info</span>
@@ -59,9 +59,7 @@
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Poster 1 -->
-                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690940.jpg" alt="Pencegahan Karies/Lubang Gigi" class="w-full h-auto object-cover">
                         </div>
@@ -69,9 +67,7 @@
                             <h3 class="font-bold text-gray-800 text-base">Pencegahan Karies / Lubang Gigi</h3>
                         </div>
                     </div>
-
-                    <!-- Poster 2 -->
-                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690941.jpg" alt="Pencegahan Karang Gigi & Gusi Tetap Sehat" class="w-full h-auto object-cover">
                         </div>
@@ -79,9 +75,7 @@
                             <h3 class="font-bold text-gray-800 text-base">Pencegahan Karang Gigi & Gusi Sehat</h3>
                         </div>
                     </div>
-
-                    <!-- Poster 3 -->
-                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690942.jpg" alt="Cara Menyikat Gigi Yang Baik dan Benar" class="w-full h-auto object-cover">
                         </div>
@@ -89,9 +83,7 @@
                             <h3 class="font-bold text-gray-800 text-base">Cara Menyikat Gigi Yang Baik</h3>
                         </div>
                     </div>
-
-                    <!-- Poster 4 -->
-                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690943.jpg" alt="Pencegahan Bau Mulut & Jaga Gigi" class="w-full h-auto object-cover">
                         </div>
@@ -99,9 +91,7 @@
                             <h3 class="font-bold text-gray-800 text-base">Pencegahan Bau Mulut</h3>
                         </div>
                     </div>
-
-                    <!-- Poster 5 -->
-                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300">
                         <div class="rounded-xl overflow-hidden border border-gray-200">
                             <img src="1000690944.jpg" alt="Edukasi Pertumbuhan Gigi Susu Pada Anak-Anak" class="w-full h-auto object-cover">
                         </div>
@@ -109,13 +99,11 @@
                             <h3 class="font-bold text-gray-800 text-base">Edukasi Gigi Susu Anak</h3>
                         </div>
                     </div>
-
                 </div>
             </section>
 
-            <hr class="border-gray-200 my-10">
+            <hr class="border-gray-300 my-10">
 
-            <!-- SEKSI 2: VIDEO EDUKASI -->
             <section>
                 <div class="text-center mb-10">
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Video Interaktif</span>
@@ -124,9 +112,7 @@
                 </div>
 
                 <div class="flex justify-center">
-                    
-                    <!-- Card Video YouTube Shorts Kamu -->
-                    <div class="bg-white rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xl">
+                    <div class="bg-white/95 rounded-2xl p-3 border-4 border-blue-100 shadow-md hover:shadow-xl transition-all duration-300 w-full max-w-xl">
                         <div class="rounded-xl overflow-hidden border border-gray-200 bg-black aspect-video">
                             <iframe class="w-full h-full" src="https://www.youtube.com/embed/5I3ASb4hoFk" title="Video Edukasi Gigi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
@@ -135,14 +121,11 @@
                             <p class="text-sm text-gray-500">Video interaktif penyuluhan kesehatan gigi untuk masyarakat Kampung KB.</p>
                         </div>
                     </div>
-
                 </div>
             </section>
-
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-6 mt-auto text-sm">
         <div class="container mx-auto px-4 text-center">
             <p>&copy; 2026 Edukasi Kesehatan Gigi. Dikembangkan untuk Intervensi Kampung KB.</p>
