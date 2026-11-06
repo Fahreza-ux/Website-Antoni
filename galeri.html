@@ -54,40 +54,34 @@
                     <p class="text-gray-500 mt-2">Materi visual edukasi yang digunakan dalam penyuluhan masyarakat.</p>
                 </div>
                 
-                <!-- Poster dibiarkan merender ukuran aslinya agar tidak pecah/terpotong -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-                    
+                    <!-- Poster 1-5 -->
                     <div class="bg-white/95 rounded-2xl p-4 border-4 border-emerald-100 shadow-md flex flex-col justify-between">
                         <img src="1000690940.jpg" alt="Pencegahan Karies/Lubang Gigi" class="w-full h-auto rounded-lg shadow-sm mb-4">
                         <h3 class="font-bold text-gray-800 text-base text-center mt-auto">Pencegahan Karies / Lubang Gigi</h3>
                     </div>
-
                     <div class="bg-white/95 rounded-2xl p-4 border-4 border-emerald-100 shadow-md flex flex-col justify-between">
                         <img src="1000690941.jpg" alt="Pencegahan Karang Gigi & Gusi Tetap Sehat" class="w-full h-auto rounded-lg shadow-sm mb-4">
                         <h3 class="font-bold text-gray-800 text-base text-center mt-auto">Pencegahan Karang Gigi & Gusi Sehat</h3>
                     </div>
-
                     <div class="bg-white/95 rounded-2xl p-4 border-4 border-emerald-100 shadow-md flex flex-col justify-between">
                         <img src="1000690942.jpg" alt="Cara Menyikat Gigi Yang Baik dan Benar" class="w-full h-auto rounded-lg shadow-sm mb-4">
                         <h3 class="font-bold text-gray-800 text-base text-center mt-auto">Cara Menyikat Gigi Yang Baik</h3>
                     </div>
-
                     <div class="bg-white/95 rounded-2xl p-4 border-4 border-emerald-100 shadow-md flex flex-col justify-between">
                         <img src="1000690943.jpg" alt="Pencegahan Bau Mulut & Jaga Gigi" class="w-full h-auto rounded-lg shadow-sm mb-4">
                         <h3 class="font-bold text-gray-800 text-base text-center mt-auto">Pencegahan Bau Mulut</h3>
                     </div>
-
                     <div class="bg-white/95 rounded-2xl p-4 border-4 border-emerald-100 shadow-md flex flex-col justify-between">
                         <img src="1000690944.jpg" alt="Edukasi Pertumbuhan Gigi Susu Pada Anak-Anak" class="w-full h-auto rounded-lg shadow-sm mb-4">
                         <h3 class="font-bold text-gray-800 text-base text-center mt-auto">Edukasi Gigi Susu Anak</h3>
                     </div>
-
                 </div>
             </section>
 
             <hr class="border-gray-300 my-10">
 
-            <!-- ================= SEKSI DOKUMENTASI FOTO ================= -->
+            <!-- ================= SEKSI DOKUMENTASI FOTO (11 GAMBAR) ================= -->
             <section>
                 <div class="text-center mb-10">
                     <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Galeri Foto</span>
@@ -95,8 +89,9 @@
                     <p class="text-gray-500 mt-2">Potret intervensi dan pemeriksaan kesehatan gigi di lapangan.</p>
                 </div>
 
-                <!-- Pastikan kamu sudah me-rename file di GitHub menjadi foto1.jpg dst. -->
+                <!-- Grid untuk 11 Gambar -->
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- PASTIKAN 11 FILE INI ADA DI GITHUB DENGAN NAMA YANG SAMA PERSIS -->
                     <img src="foto1.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 1">
                     <img src="foto2.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 2">
                     <img src="foto3.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 3">
@@ -107,6 +102,7 @@
                     <img src="foto8.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 8">
                     <img src="foto9.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 9">
                     <img src="foto10.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 10">
+                    <img src="foto11.jpg" class="bg-white p-2 rounded-xl shadow-sm border border-emerald-100 w-full h-48 md:h-64 object-cover" alt="Dokumentasi 11">
                 </div>
             </section>
 
@@ -123,8 +119,10 @@
                 <div class="flex justify-center">
                     <div class="bg-white/95 rounded-2xl p-4 border-4 border-emerald-100 shadow-md w-full max-w-2xl">
                         
-                        <!-- Embed Video Diperbaiki (Menggunakan Aspect-Video Bawaan Tailwind) -->
-                        <iframe class="w-full aspect-video rounded-xl shadow-sm mb-4" src="https://www.youtube.com/embed/5I3ASb4hoFk" title="Video Edukasi Gigi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- Iframe Video YouTube -->
+                        <div class="w-full aspect-video mb-4 rounded-xl overflow-hidden shadow-sm">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/5I3ASb4hoFk" title="Video Edukasi Gigi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                         
                         <div class="text-center">
                             <h3 class="font-bold text-gray-800 text-lg mb-1">Edukasi Kesehatan Gigi & Mulut</h3>
